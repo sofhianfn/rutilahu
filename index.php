@@ -46,8 +46,7 @@
 							    <ul class="navbar-nav">
 									<li><a href="index.php#home">Depan</a></li>
 									<li><a href="index.php#tentang">Tentang</a></li>
-									<li><a href="index.php#feature">Fitur</a></li>
-									<li><a href="index.php#home">Login</a></li>				
+									<li><a href="index.php#feature">Fitur</a></li>		
 							    </ul>
 							  </div>						
 						</div>
