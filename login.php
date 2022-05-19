@@ -37,7 +37,7 @@
 	}
 	
 	session_start();
-	if($_SESSION['username']!='') {
+	if(@$_SESSION['username']!='') {
 	    if($_SESSION['level']=='desa') {
     	    header('location:index.php');
 	    }

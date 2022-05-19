@@ -32,7 +32,7 @@
 					<div class="wrap">
 						<div class="img" style="background-image: url(login_asset/images/rutilahu.jpg);"></div>
 						<div class="login-wrap p-0 ml-4 mr-4 mt-4 mb-4">
-				<form action="insert.php" method="POST">
+				<form action="insert.php?page=daftar" method="POST">
 		      		<div class="form-group mt-3">
 		      			<input name="username" type="text" class="form-control" required>
 		      			<label class="form-control-placeholder" for="username">Username</label>
