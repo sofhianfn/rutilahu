@@ -1,0 +1,14 @@
+Jika ingin menginstall aplikasi ini di localhost.
+
+Gunakan Server seperti XAMPP
+
+1. Buat database menggunaka  phpMyAdmin, kemudian klik import database, pilih file database.sql
+2. Atur koneksi ke database di file /config/db.php
+3. Terakhir Akses aplikasi melalui browser
+
+Administrator
+username: admin
+password: 12345
+
+Operator Desa
+username dan password: silakan registrasi/daftar
