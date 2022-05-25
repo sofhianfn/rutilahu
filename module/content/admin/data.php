@@ -173,7 +173,7 @@
                     	$qdesa = mysqli_query($con,"SELECT * FROM kec,desa WHERE kec.id=desa.id_kec ORDER BY kec.kecamatan");
                     	while($desa=mysqli_fetch_array($qdesa)) {
                     	    $akun = mysqli_fetch_array(mysqli_query($con,"SELECT * FROM akun WHERE id_desa='$desa[id]' "));
-                    	    if($akun[username]!='') {
+                    	    if($akun['username']!='') {
                     	        $adaakun = "<span class='badge badge-success'>Sudah</span>";
                     	    }
                     	    else {

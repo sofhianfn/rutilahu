@@ -1,5 +1,5 @@
 <?php
-
+	error_reporting(E_ALL & ~E_NOTICE);
 	include "config/db.php";
 	
 	if(@$_GET[notif]=='sukses') {

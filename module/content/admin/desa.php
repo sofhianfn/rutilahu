@@ -33,7 +33,7 @@
                     			$status = 'Aktif';
                     		}
                     		else {
-                    			$status = '<a href="update.php?page=aktivasi&id='.$data[username].'">Non Aktif</a>';
+                    			$status = '<a href="update.php?page=aktivasi&id='.$data['username'].'">Non Aktif</a>';
                     		}
                     		
                     	echo "	
@@ -86,7 +86,7 @@
                     	$qdesa = mysqli_query($con,"SELECT * FROM kec,desa WHERE kec.id=desa.id_kec ORDER BY kec.kecamatan");
                     	while($desa=mysqli_fetch_array($qdesa)) {
                     	    $akun = mysqli_fetch_array(mysqli_query($con,"SELECT * FROM akun WHERE id_desa='$desa[id]' "));
-                    	    if($akun[username]!='') {
+                    	    if($akun['username']!='') {
                     	        $adaakun = "<span class='badge badge-success'>Sudah</span>";
                     	    }
                     	    else {
@@ -155,16 +155,16 @@
 
         <form method="POST" action="update.php?page=akun">
             <p><label>Username</label>
-                <input class="form-control" type="text" name="username" value="<?php echo $hasil[username]; ?>" readonly>
+                <input class="form-control" type="text" name="username" value="<?php echo $hasil['username']; ?>" readonly>
             </p>
             <p><label>Password</label>
-                <input class="form-control" type="password" name="password" value="<?php echo $hasil[password]; ?>">
+                <input class="form-control" type="password" name="password" value="<?php echo $hasil['password']; ?>">
             </p>
             <p><label>Nama Lengkap</label>
-            <input class="form-control" type="text" name="nama" value="<?php echo $hasil[nama]; ?>">
+            <input class="form-control" type="text" name="nama" value="<?php echo $hasil['nama']; ?>">
             </p>
             <p><label>Nomor HP</label>
-            <input class="form-control" type="text" name="hp" value="<?php echo $hasil[hp]; ?>">
+            <input class="form-control" type="text" name="hp" value="<?php echo $hasil['hp']; ?>">
             </p>
             <p>
             <input class="btn btn-primary" type="submit" value="Ubah">
@@ -198,7 +198,7 @@
             <input class="form-control" type="text" name="nama">
             </p>
             <p><label>Nomor HP</label>
-            <input class="form-control" type="text" name="hp" value="<?php echo $hasil[hp]; ?>">
+            <input class="form-control" type="text" name="hp">
             </p>
             
             <p><label>Desa</label>
